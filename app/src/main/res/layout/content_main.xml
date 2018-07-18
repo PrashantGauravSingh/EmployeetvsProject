@@ -1,0 +1,272 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_userinfo_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:background="@color/white"
+    tools:context="com.andtechno.singh.psheet.DetailedActivity" >
+
+
+<ImageView
+    android:id="@+id/image_from_camera"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/user"
+    />
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_below="@+id/image_from_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:textSize="18sp"
+        android:textColor="@color/input_login"
+        android:visibility="invisible"/>
+
+                <LinearLayout
+                    android:id="@+id/aditionalinfo"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/timestamp"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@color/bg_login"
+                    android:gravity="center|center_horizontal"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.51"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="Raleway.ttf"
+                            android:gravity="left|center_vertical"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:text="Name"
+                            android:textColor="@android:color/white" />
+
+                        <EditText
+                            android:id="@+id/etMName"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="Raleway-Regular.ttf"
+                            android:gravity="left|center_vertical"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.51"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="Raleway.ttf"
+                            android:gravity="left|center_vertical"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:text="Position"
+                            android:textColor="@android:color/white" />
+
+                        <EditText
+                            android:id="@+id/etPosition"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="Raleway-Regular.ttf"
+                            android:gravity="left|center_vertical"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"/>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/City"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.51"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="Raleway.ttf"
+                            android:gravity="left|center_vertical"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:text="City"
+                            android:textColor="@android:color/white" />
+
+                        <EditText
+                            android:id="@+id/etcity"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="Raleway-Regular.ttf"
+                            android:gravity="left|center_vertical"
+                            android:inputType="numberDecimal"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.51"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="Raleway.ttf"
+                            android:gravity="left|center_vertical"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:text="EmployeID"
+                            android:textColor="@android:color/white" />
+
+                        <EditText
+                            android:id="@+id/EmployeID"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="Raleway-Regular.ttf"
+                            android:gravity="left|center_vertical"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white" >
+                        </EditText>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.51"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="Raleway.ttf"
+                            android:gravity="left|center_vertical"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:text="Salary"
+                            android:textColor="@android:color/white" />
+
+                        <EditText
+                            android:id="@+id/etMLocation"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="Raleway-Regular.ttf"
+                            android:gravity="left|center_vertical"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.51"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="Raleway.ttf"
+                            android:gravity="left|center_vertical"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:text="D.O.B"
+                            android:textColor="@android:color/white" />
+
+                        <EditText
+                            android:id="@+id/etDob"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="Raleway-Regular.ttf"
+                            android:gravity="left|center_vertical"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+</RelativeLayout>
